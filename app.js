@@ -23,7 +23,7 @@ angular.module('scheduleApp', ['firebase'])
   		tuesday: {
   			name: 'Tuesday',
   			slots: {
-  				09:00: {
+  				0900: {
   					time: '9:00am',
   					booked: false
   				},
