@@ -5,6 +5,8 @@ angular.module('scheduleApp', ['firebase'])
 	var ref = new Firebase("https://scheduler-angular.firebaseio.com/");  
   var fb = $firebase(ref);
 
+  var syncObject = fb.$asObject();
+
   $scope.reset = function() {
   	fb.$set({
   		monday: {
